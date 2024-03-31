@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="96dp"
+        android:layout_height="20dp"
+        android:text="@string/rumeysa"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="96dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/person">
+
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/person"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/baseline_person_pin_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ayarlar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/baseline_settings_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/kelimeoy"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:gravity="center"
+       >
+
+        <Button
+            android:id="@+id/oyna"
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:onClick="btnclick"
+            android:backgroundTint="#F1D0D0"
+            android:text="Hemen Oyna"
+            android:textColor="#610101"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/market"
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F1D0D0"
+            android:text="Market"
+            android:textColor="#610101"
+            android:onClick="btnclick"
+
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/cikis"
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#F1D0D0"
+            android:text="Çıkış"
+            android:textColor="#610101"
+            android:onClick="btnclick"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
